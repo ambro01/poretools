@@ -1,7 +1,9 @@
 import Fast5File
-import matplotlib
+import matplotlib 
+matplotlib.use('agg')
 #matplotlib.use('Agg') # Must be called before any other matplotlib calls
 from matplotlib import pyplot as plt
+plt.switch_backend('agg')
 
 import numpy as np
 import pandas as pd

@@ -1,9 +1,11 @@
 import sys
 import time
 
-import matplotlib
+import matplotlib 
+matplotlib.use('agg')
 #matplotlib.use('Agg') # Must be called before any other matplotlib calls
 from matplotlib import pyplot as plt
+plt.switch_backend('agg')
 
 import seaborn as sns
 import Fast5File
