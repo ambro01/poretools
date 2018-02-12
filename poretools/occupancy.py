@@ -3,7 +3,11 @@ from collections import Counter
 import sys
 import pandas as pd
 import seaborn as sns
+import matplotlib 
+matplotlib.use('agg')
+#matplotlib.use('Agg') # Must be called before any other matplotlib calls
 from matplotlib import pyplot as plt
+plt.switch_backend('agg')
 
 import logging
 logger = logging.getLogger('poretools')
